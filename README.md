@@ -26,11 +26,11 @@ antigen apply
 
 ```bash
 # default version
-curl https://zsh-theme.vercel.app/vercel.zsh-theme \
+curl https://raw.githubusercontent.com/vercel/zsh-theme/master/vercel.zsh-theme \
   -Lo ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/vercel.zsh-theme
 
 # alternate version (no hostname)
-curl https://zsh-theme.vercel.app/vercel-alt.zsh-theme \
+curl https://raw.githubusercontent.com/vercel/zsh-theme/master/vercel-alt.zsh-theme \
   -Lo ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/vercel.zsh-theme
 ```
 
