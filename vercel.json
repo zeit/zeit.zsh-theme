@@ -1,0 +1,24 @@
+{
+  "github": {
+    "autoAlias": true,
+    "enabled": true
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "access-control-allow-origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/vercel/zsh-theme",
+      "permanent": true
+    }
+  ]
+}

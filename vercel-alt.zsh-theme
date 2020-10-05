@@ -1,6 +1,5 @@
 local resetColor="%{$reset_color%}"
 local logo="%{$fg_bold[white]%}▲$resetColor$resetColor"
-local hostname=$(hostname)
 local dir="%{$fg_bold[white]%}%c$resetColor$resetColor"
 
 GIT_PROMPT_PREFIX="[%{$fg_bold[white]%}"
@@ -43,4 +42,4 @@ function git_prompt() {
   fi
 }
 
-PROMPT='$logo ($hostname) $dir $(git_prompt)'
+PROMPT='$logo $dir $(git_prompt)'

@@ -1,38 +1,51 @@
-# vercel.zsh-theme
-▲Vercel's `zsh` theme
+<!-- markdownlint-disable MD033 MD036 MD041 -->
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vercel/zsh-theme/master/screenshot.png?v=2">
-</p>
+![vercel.zsh-theme](./assets/header.png)
 
-## Install
+<!-- https://www.figma.com/file/AYvctU07n0jWZNUT7CwSL5/vercel-zsh-theme -->
+
+## Variants
+
+| [`vercel.zsh-theme`](./vercel.zsh-theme)  | [`vercel-alt.zsh-theme`](./vercel-alt.zsh-theme)  |
+| :---------------------------------------: | :-----------------------------------------------: |
+|           `▲ (your-hostname) ~`           |                       `▲ ~`                       |
+| ![vercel.zsh-theme](./assets/preview.png) | ![vercel-alt.zsh-theme](./assets/preview-alt.png) |
+
+## Usage
 
 ### Using [antigen](https://github.com/zsh-users/antigen)
 
-Add following line into your `~/.zshrc`, before `antigen apply`:
-
-```
+```bash
 antigen theme vercel/zsh-theme
+antigen apply
 ```
-
-You can also preview theme without making it default by executing this command in active zsh session.
 
 ### Manual installation
 
-First, download the theme into [`Oh My Zsh`](https://github.com/robbyrussell/oh-my-zsh)'s custom theme folder:
+**Download theme file**
 
-```
-curl https://raw.githubusercontent.com/vercel/zsh-theme/master/vercel.zsh-theme -Lo ~/.oh-my-zsh/custom/themes/vercel.zsh-theme
+```bash
+# default version
+curl https://zsh-theme.vercel.app/vercel.zsh-theme \
+  -Lo ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/vercel.zsh-theme
+
+# alternate version (no hostname)
+curl https://zsh-theme.vercel.app/vercel-alt.zsh-theme \
+  -Lo ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/vercel.zsh-theme
 ```
 
-Edit your `~/.zshrc`:
+**Set theme in `~/.zshrc`**
 
-```
+```bash
 ZSH_THEME="vercel"
 ```
 
-Then apply the theme:
+**Apply theme**
 
+```bash
+source ~/.zshrc # or restart terminal session
 ```
-source ~/.zshrc
-```
+
+## License
+
+[MIT License, Copyright (c) 2020 Vercel](./LICENSE)
